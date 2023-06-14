@@ -24,7 +24,7 @@ Then run `pip install -r requirements.txt`
 - [x] Use LLM to generate proofs in a readable format
 - [x] Execute generated Coq
 - [x] Use LLM to evaluate proofs for logical consistency
-- [] Store proof results in memory
-- [] Generate new conjectures
-- [] Break down proofs recursively into sub-goals
-- [] ...
+- [ ] Store proof results in memory
+- [ ] Generate new conjectures
+- [ ] Break down proofs recursively into sub-goals
+- [ ] ...
