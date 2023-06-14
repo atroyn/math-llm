@@ -10,6 +10,8 @@ Contributions are welcome.
 
 You will need the `coqtop` command line application. This is a CLI for interacting with the [Coq](https://coq.inria.fr/download) proof assistant software. I used the default installation path and it worked out of the box following the instructions in the included README.
 
+You will need an [OpenAI API Key](https://platform.openai.com/account/api-keys) set in the OPENAI_API_KEY environment variable.
+
 Then run `pip install -r requirements.txt`
 
 ## Run
