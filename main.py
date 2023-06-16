@@ -22,7 +22,7 @@ def check_coq(coq: str) -> Tuple[str, bool]:
         if line == "":
             continue
         # If the line starts with a coq comment,  skip it
-        if line[0] == "(":
+        if line.strip()[:2] == "(*":
             continue
 
         # Execute the line
