@@ -57,13 +57,12 @@ class Prover:
                 }
             )
 
-        natural = model_output.split("```")[0]
-        coq = model_output.split("```")[1]
+        natural, coq, _ = split
 
-        # Strip and leading or trailing whitespace
-        coq = coq.strip()
-        # Strip any lines containing ```
-        coq = "\n".join([line for line in coq.split("\n") if "```" not in line])
+        # Strip any codeblock formatting like ```coq
+        coq = "\n".join(coq.split("\n")[1:])
+        # Strip and leading or trailing whitespace and newlines
+        coq = coq.strip("\n ")
 
         return natural, coq
 
